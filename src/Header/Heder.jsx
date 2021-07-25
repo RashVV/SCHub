@@ -4,10 +4,10 @@ import './header.module.css'
 const Header = () =>{
     return (
         <div className='headernew'>
-        <a>Create Letter</a>
-        <a>How it work</a>
-        <a>Donate</a>
-        <a>Contact</a>
+        <div><a>Create Letter</a></div>
+        <div><a>How it work</a></div>
+        <div><a>Donate</a></div>
+        <div><a>Contact</a></div>
         </div>
     )
 }
