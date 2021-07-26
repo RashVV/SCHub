@@ -27,6 +27,7 @@ function Copyright() {
   );
 }
 
+
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
@@ -61,6 +62,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+/*let CardMediaTheme = [
+  {"id": 1, url: "https://i.pinimg.com/originals/57/62/c3/5762c36007983afbd40581dfd8921cd4.jpg"},
+  {"id": 2, url: "https://i.pinimg.com/originals/c5/b0/bd/c5b0bdf3b9f7cd67adb10f3d6b34aa5f.jpg"}
+  {"id": 3, url: "https://i.pinimg.com/originals/cf/cb/5c/cfcb5c19624f007e6615b1cd3c5b9348.png"}
+  {id: 4, url: "https://i.pinimg.com/originals/4b/9d/ea/4b9dea7b2992e1131ae2ab9b435cb0d6.jpg"}
+  {id: 5, url: "https://i.pinimg.com/originals/95/c0/31/95c03158f8c88beb2563f203ed491c53.jpg"}
+  {id: 6, url: "http://cdn.shopify.com/s/files/1/2988/1208/products/11812_1024x1024.jpg?v=1519059085"}
+  {id: 7, url: "http://cdn.shopify.com/s/files/1/2988/1208/products/2013264_2_1024x1024.jpg?v=1519059126"}
+  {id: 8, url: "http://cdn.shopify.com/s/files/1/2988/1208/products/2017024_1024x1024.jpg?v=1519059067"}
+  {id: 9, url: "https://i.pinimg.com/originals/5c/d2/fe/5cd2fee181cf8cc1e908927a00003e34.png"}
+];*/
 
 export default function Album() {
   const classes = useStyles();
@@ -90,12 +102,12 @@ export default function Album() {
               <Grid container spacing={2} justifyContent="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
-                    Main call to action
+                    Make Letter and send to Santa
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
+                  <Button variant="contained" color="primary">
+                  Share our app with friends
                   </Button>
                 </Grid>
               </Grid>
@@ -118,7 +130,7 @@ export default function Album() {
                       Letter to Santa Claus
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this card to preper your own letter for Santa Claus.
+                      This is a media card. You can use this card to prepare your own letter for Santa Claus.
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -138,10 +150,10 @@ export default function Album() {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          Contact
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
+          Santa Claus Hub International Service!
         </Typography>
         <Copyright />
       </footer>
