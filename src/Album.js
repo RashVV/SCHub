@@ -110,20 +110,20 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image="https://i.pinimg.com/originals/cf/cb/5c/cfcb5c19624f007e6615b1cd3c5b9348.png"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Letter to Santa Claus
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      This is a media card. You can use this card to preper your own letter for Santa Claus.
                     </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
-                      View
+                      Use it
                     </Button>
                     <Button size="small" color="primary">
                       Edit
