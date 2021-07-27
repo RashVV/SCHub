@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import { Repeat } from '@material-ui/icons';
 
 function Copyright() {
   return (
@@ -36,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: "url(https://www.portablenorthpole.com/assets-7.1.5-06770f6-20210723083004-3200.1/images/FB1200_630.jpg)",
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
+    backgroundSize: "100%",
+    backgroundRepeat: 'no-repeat',
   },
   heroButtons: {
     marginTop: theme.spacing(4),
