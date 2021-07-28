@@ -64,8 +64,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-/*const CardMediaTheme = [
+// const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = ([
 {
    image: "https://i.pinimg.com/originals/57/62/c3/5762c36007983afbd40581dfd8921cd4.jpg",
    title: "Letter to Santa Claus",
@@ -110,10 +110,10 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
    image: "https://i.pinimg.com/originals/5c/d2/fe/5cd2fee181cf8cc1e908927a00003e34.png",
    title: "Letter to Santa Claus",
    description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
-},
-];*/
+}
+]);
 
-export default function Album() {
+export default function Album( image, title, description ) {
   const classes = useStyles();
 
   return (
@@ -161,7 +161,7 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://i.pinimg.com/originals/cf/cb/5c/cfcb5c19624f007e6615b1cd3c5b9348.png"
+                    image={cards.image}
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
