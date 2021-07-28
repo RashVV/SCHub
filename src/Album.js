@@ -13,13 +13,12 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import { Repeat } from '@material-ui/icons';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color="inherit" href="#">
         Santa Claus Hub
       </Link>{' '}
       {new Date().getFullYear()}
@@ -27,6 +26,7 @@ function Copyright() {
     </Typography>
   );
 }
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -65,16 +65,52 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-/*let CardMediaTheme = [
-  {"id": 1, url: "https://i.pinimg.com/originals/57/62/c3/5762c36007983afbd40581dfd8921cd4.jpg"},
-  {"id": 2, url: "https://i.pinimg.com/originals/c5/b0/bd/c5b0bdf3b9f7cd67adb10f3d6b34aa5f.jpg"}
-  {"id": 3, url: "https://i.pinimg.com/originals/cf/cb/5c/cfcb5c19624f007e6615b1cd3c5b9348.png"}
-  {id: 4, url: "https://i.pinimg.com/originals/4b/9d/ea/4b9dea7b2992e1131ae2ab9b435cb0d6.jpg"}
-  {id: 5, url: "https://i.pinimg.com/originals/95/c0/31/95c03158f8c88beb2563f203ed491c53.jpg"}
-  {id: 6, url: "http://cdn.shopify.com/s/files/1/2988/1208/products/11812_1024x1024.jpg?v=1519059085"}
-  {id: 7, url: "http://cdn.shopify.com/s/files/1/2988/1208/products/2013264_2_1024x1024.jpg?v=1519059126"}
-  {id: 8, url: "http://cdn.shopify.com/s/files/1/2988/1208/products/2017024_1024x1024.jpg?v=1519059067"}
-  {id: 9, url: "https://i.pinimg.com/originals/5c/d2/fe/5cd2fee181cf8cc1e908927a00003e34.png"}
+/*const CardMediaTheme = [
+{
+   image: "https://i.pinimg.com/originals/57/62/c3/5762c36007983afbd40581dfd8921cd4.jpg",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
+{
+   image: "https://i.pinimg.com/originals/c5/b0/bd/c5b0bdf3b9f7cd67adb10f3d6b34aa5f.jpg",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
+{
+   image: "https://i.pinimg.com/originals/cf/cb/5c/cfcb5c19624f007e6615b1cd3c5b9348.png",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
+{
+   image: "https://i.pinimg.com/originals/4b/9d/ea/4b9dea7b2992e1131ae2ab9b435cb0d6.jpg",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
+{
+   image: "https://i.pinimg.com/originals/95/c0/31/95c03158f8c88beb2563f203ed491c53.jpg",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
+{
+   image: "http://cdn.shopify.com/s/files/1/2988/1208/products/11812_1024x1024.jpg?v=1519059085",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
+  {
+   image: "http://cdn.shopify.com/s/files/1/2988/1208/products/2013264_2_1024x1024.jpg?v=1519059126",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
+  {
+   image: "http://cdn.shopify.com/s/files/1/2988/1208/products/2017024_1024x1024.jpg?v=1519059067",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
+  {
+   image: "https://i.pinimg.com/originals/5c/d2/fe/5cd2fee181cf8cc1e908927a00003e34.png",
+   title: "Letter to Santa Claus",
+   description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
+},
 ];*/
 
 export default function Album() {
@@ -99,7 +135,7 @@ export default function Album() {
               Santa Claus Hub
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            If you have been a good boy or girl for a year. And you want to write a letter to Santa Claus. Then our service will help you write a wonderful letter and send it to Santa.
+              If you have been a good boy or girl for a year. And you want to write a letter to Santa Claus. Then our service will help you write a wonderful letter and send it to Santa.
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justifyContent="center">
@@ -110,7 +146,7 @@ export default function Album() {
                 </Grid>
                 <Grid item>
                   <Button variant="contained" color="primary">
-                  Share our app with friends
+                    Share our app with friends
                   </Button>
                 </Grid>
               </Grid>
