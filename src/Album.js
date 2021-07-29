@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 // const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const cards = ([
+const cards = [
 {
    image: "https://i.pinimg.com/originals/57/62/c3/5762c36007983afbd40581dfd8921cd4.jpg",
    title: "Letter to Santa Claus",
@@ -111,9 +111,9 @@ const cards = ([
    title: "Letter to Santa Claus",
    description: "This is a media card. You can use this card to prepare your own letter for Santa Claus."
 }
-]);
+];
 
-export default function Album( image, title, description ) {
+export default function Album( {image, title, description} )  {
   const classes = useStyles();
 
   return (
