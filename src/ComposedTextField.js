@@ -4,6 +4,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -47,6 +48,8 @@ export default function ComposedTextField() {
         <Input id="component-deals" value={deals} onChange={handleChangeDeals} />
         <FormHelperText id="component-helper-text">What good deals you make this year.</FormHelperText>
       </FormControl>
-        </form>
+      <Button variant="outlined">Create and Sent</Button>
+      </form>
+         
   );
 }
