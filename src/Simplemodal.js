@@ -49,7 +49,7 @@ export default function SimpleModal({card}) {
       <p id="simple-modal-description">
       
           {card && (
-          <img src={card.image} alt="" width="335px" height="400px"></img>
+          <img src={card.image} alt="" width="250px" height="350px"></img>
 
           )}
         If this tamplate is ok input text.
