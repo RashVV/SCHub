@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <div>
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-        Site Menu 
+        Menu 
       </Button>
       <Menu
         id="simple-menu"
