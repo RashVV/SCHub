@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import SimpleModal from './Simplemodal';
 
 function Copyright() {
   return (
@@ -54,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
+    backgroundSize: 'contain'
   },
   cardContent: {
     flexGrow: 1,
@@ -156,12 +158,12 @@ export default function Album( {image, title, description} )  {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+            {cards.map((card, index) => (
+              <Grid item key={index} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image={cards.image}
+                    image={card.image}
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
@@ -173,9 +175,7 @@ export default function Album( {image, title, description} )  {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
-                      Use it
-                    </Button>
+                     <SimpleModal card={card}  />
                     <Button size="small" color="primary">
                       Edit
                     </Button>
