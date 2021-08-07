@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(8, 0, 6),
     backgroundSize: "100%",
     backgroundRepeat: 'no-repeat',
+   /* color: "white" !important,*/
   },
   heroButtons: {
     marginTop: theme.spacing(4),
@@ -65,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 const styles = { display:"block", marginLeft: "auto", marginRight: "auto" };
-
+const stylesH = { color:"black" };
 // const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const cards = [
 {
@@ -130,10 +131,10 @@ export default function Album( {image, title, description} )  {
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+            <Typography component="h1" variant="h2" align="center" color="textPrimary" style={stylesH} gutterBottom>
               Santa Claus Hub
             </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+            <Typography variant="h5" align="center" color="textSecondary" style={stylesH} paragraph>
               If you have been a good boy or girl for a year. And you want to write a letter to Santa Claus. Then our service will help you write a wonderful letter and send it to Santa.
             </Typography>
             <div className={classes.heroButtons}>
