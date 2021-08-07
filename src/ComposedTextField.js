@@ -30,7 +30,6 @@ export default function ComposedTextField() {
     setDeals(event.target.value);
   };
 
-
   return (
     <form className={classes.root} noValidate autoComplete="off">
       <FormControl>

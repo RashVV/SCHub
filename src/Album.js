@@ -1,7 +1,6 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-import AcUnitIcon from '@material-ui/icons/AcUnit';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -34,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
   },
-  heroContent: {
+   heroContent: {
     backgroundImage: "url(https://www.portablenorthpole.com/assets-7.1.5-06770f6-20210723083004-3200.1/images/FB1200_630.jpg)",
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
@@ -65,6 +64,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(6),
   },
 }));
+const styles = { display:"block", marginLeft: "auto", marginRight: "auto" };
 
 // const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const cards = [
@@ -122,11 +122,8 @@ export default function Album( {image, title, description} )  {
     <React.Fragment>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar>
-          <AcUnitIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Santa Claus Hub
-          </Typography>
+        <Toolbar style={styles}>
+          <img  src="./logoWSKHb_200x200.png" alt='Santa Claus Hub Logo' width="87px" height="87px"></img>
         </Toolbar>
       </AppBar>
       <main>
