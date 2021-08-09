@@ -135,7 +135,7 @@ export default function Album( {image, title, description} )  {
               Santa Claus Hub
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" style={stylesH} paragraph>
-              If you have been a good boy or girl for a year. And you want to write a letter to Santa Claus. Then our service will help you write a wonderful letter and send it to Santa.
+            You were a good boy or girl during this year. You want to write a letter to Santa Claus. Then our service will help you write a wonderful letter and send it to Santa.
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justifyContent="center">
