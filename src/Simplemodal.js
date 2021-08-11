@@ -52,7 +52,7 @@ export default function SimpleModal({card}) {
           <img src={card.image} alt="Sunta Claus letter" width="250px" height="350px"></img>
 
           )}
-        If this tamplate is ok input text.
+        Add text.
       </p>
       <ComposedTextField />
       
