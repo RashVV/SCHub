@@ -162,7 +162,7 @@ export default function Album( {image, title, description} )  {
                   <CardMedia
                     className={classes.cardMedia}
                     image={card.image}
-                    title="Image title"
+                    title={card.title}
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">

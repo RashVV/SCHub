@@ -62,7 +62,7 @@ export default function SimpleModal({card}) {
   return (
     <div>
       <button type="button" onClick={handleOpen}>
-        Look closer on tamplate
+        Look closer on card
       </button>
       <Modal
         open={open}
