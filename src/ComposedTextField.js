@@ -29,6 +29,10 @@ export default function ComposedTextField() {
   const handleChangeDeals = (event) => {
     setDeals(event.target.value);
   };
+  function SaveUserData(){
+    var name = document.getElementById('component-name').value
+    console.log("users value is:" + name);
+  }
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
@@ -47,7 +51,7 @@ export default function ComposedTextField() {
         <Input id="component-deals" value={deals} onChange={handleChangeDeals} />
         <FormHelperText id="component-helper-text">What good deals you make this year.</FormHelperText>
       </FormControl>
-      <Button variant="outlined" color="secondary">Create and Sent</Button>
+      <Button variant="outlined" onClick="SaveUserData" color="secondary">Create and Sent</Button>
       </form>
          
   );
