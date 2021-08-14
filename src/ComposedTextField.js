@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
@@ -51,8 +51,7 @@ export default function ComposedTextField() {
         <Input id="component-deals" value={deals} onChange={handleChangeDeals} />
         <FormHelperText id="component-helper-text">What good deals you make this year.</FormHelperText>
       </FormControl>
-      <Button variant="outlined" onClick="SaveUserData" color="secondary">Create and Sent</Button>
+      <Button variant="outlined" onClick={() => this.SaveUserData()} color="secondary">Create and Sent</Button>
       </form>
-         
-  );
+       );
 }
