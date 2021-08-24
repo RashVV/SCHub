@@ -36,7 +36,6 @@ export default function ComposedTextField() {
         <Input {...register("deals")} />
         <FormHelperText id="component-helper-text">What good deals you make this year.</FormHelperText>
       </FormControl>
-      <imput type="submit" />
       <Button variant="outlined" type="submit" color="secondary">Create and Sent</Button>
       </form>
        );

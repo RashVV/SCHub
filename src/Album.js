@@ -190,7 +190,7 @@ export default function Album( {image, title, description} )  {
           Contact
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Santa Claus Hub International Service!
+          Santa Claus Hub International Service for You!
         </Typography>
         <Copyright />
       </footer>
