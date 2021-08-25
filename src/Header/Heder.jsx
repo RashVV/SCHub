@@ -29,7 +29,7 @@ export default function Header() {
         <MenuItem onClick={handleClose}>Create Letter</MenuItem>
         <MenuItem onClick={handleClose}>How it work</MenuItem>
         <MenuItem onClick={handleClose}>Donate</MenuItem>
-        <MenuItem onClick={handleClose}>Contact</MenuItem>
+        <MenuItem onClick={handleClose}>Find us</MenuItem>
       </Menu>
     </div>
   );
