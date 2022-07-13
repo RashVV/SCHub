@@ -17,8 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ComposedTextField() {
   const {register, handleSubmit } = useForm();
-  const onSubmit = data => console.log(data);
-
+  const onSubmit = data => localStorage.setItem('letterContent', JSON.stringify(data));
   return (
     <form  noValidate autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
       <FormControl>
